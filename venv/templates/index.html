@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emoji Browser</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Emoji Browser</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('print_all_icons') }}">View All Icons</a></li>
+            <li><a href="{{ url_for('search_icons_by_keyword') }}">Search Icons</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
